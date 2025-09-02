@@ -10,6 +10,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Productdao productdao = new Productdao();
         Supplierdao supplierdao = new Supplierdao();
+
         while (true) {
             System.out.println("\n Inventory Management ");
             System.out.println("1. Add Supplier");

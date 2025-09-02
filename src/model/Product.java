@@ -7,6 +7,7 @@ public class Product {
     private final double price;
     private int quantity;
     private final String category;
+
     public Product(int productID, int supplierID, String name, double price, int quantity, String category) {
         this.productID = productID;
         this.supplierID = supplierID;

@@ -7,6 +7,7 @@ import java.util.HashMap;
 public class Supplierdao {
     public boolean addSupplier(Supplier supplier) {
         String sql = "INSERT INTO suppliers (name, contact, email, address) VALUES (?, ?, ?, ?)";
+
         try (Connection conn = dbconnection.getConnection();
              PreparedStatement preparedStatement = conn.prepareStatement(sql)) {
             preparedStatement.setString(1, supplier.getName());

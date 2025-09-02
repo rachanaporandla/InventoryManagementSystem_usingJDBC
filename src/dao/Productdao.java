@@ -7,6 +7,7 @@ import java.util.HashMap;
 public class Productdao {
     public boolean addProduct(Product product) {
         String sql = "INSERT INTO products (supplierID, name, price, quantity, category) VALUES (?, ?, ?, ?, ?)";
+
         try (Connection conn = dbconnection.getConnection();
              PreparedStatement preparedStatement = conn.prepareStatement(sql)) {
             preparedStatement.setInt(1, product.getSupplierID());

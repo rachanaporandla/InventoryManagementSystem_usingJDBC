@@ -6,6 +6,7 @@ public class Supplier {
     private final String contact;
     private final String email;
     private final String address;
+
     public Supplier(int supplierID, String name, String contact, String email, String address) {
         this.supplierID = supplierID;
         this.name = name;
