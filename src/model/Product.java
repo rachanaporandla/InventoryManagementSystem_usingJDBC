@@ -1,4 +1,5 @@
 package model;
+
 public class Product {
     private final int productID;
     private final int supplierID;

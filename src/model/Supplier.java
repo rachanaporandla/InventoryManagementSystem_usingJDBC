@@ -1,4 +1,5 @@
 package model;
+
 public class Supplier {
     private final int supplierID;
     private final String name;

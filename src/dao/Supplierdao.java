@@ -3,6 +3,7 @@ import db.dbconnection;
 import model.Supplier;
 import java.sql.*;
 import java.util.HashMap;
+
 public class Supplierdao {
     public boolean addSupplier(Supplier supplier) {
         String sql = "INSERT INTO suppliers (name, contact, email, address) VALUES (?, ?, ?, ?)";
